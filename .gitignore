@@ -1,0 +1,8 @@
+# Ignore compiled Java files
+*.class
+
+# Ignore any markdown files in the src directory
+src/*.md
+
+# Ignore VSCode settings folder
+.vscode
