@@ -1,0 +1,36 @@
+import basic_operations.BasicOperations;
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            int option;
+
+            do {
+                System.out.println("\n=== Exercise List: Basic Operations with Java ===");
+                System.out.println("1 - Hello World");
+                System.out.println("2 - Informed Number");
+                System.out.println("3 - Format and Display Data");
+                System.out.println("4 - Sum Two Numbers");
+                System.out.println("0 - Exit\n");
+                System.out.print("Choose an option: ");
+                
+                option = scanner.nextInt();
+                System.out.println();
+
+                switch (option) {
+                    case 1 -> BasicOperations.helloWorld();
+                    case 2 -> {
+                        int number = BasicOperations.informedNumber(scanner);
+                        System.out.println("Stored number: " + number);
+                    }
+                    case 3 -> BasicOperations.formatAndDisplayData();
+                    case 4 -> BasicOperations.sumTwoNumbers(scanner);
+                    case 0 -> System.out.println("Exiting...");
+                    default -> System.out.println("Invalid option! Try again.");
+                }
+                
+            } while (option != 0);
+        }
+    }
+}
