@@ -6,3 +6,5 @@ src/*.md
 
 # Ignore VSCode settings folder
 .vscode
+
+/bin
