@@ -67,4 +67,11 @@ public final class BasicOperations {
         return averageGrade;
     }
     
+    public static void convertMetersToCentimeters (Scanner scanner) {
+        System.out.println("Enter the measurement in meters: ");
+        double metros = scanner.nextDouble();
+
+        double convertedMeters = metros * 100;
+        System.out.println("Centimeters: " + convertedMeters);
+    }
 }
