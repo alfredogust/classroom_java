@@ -52,19 +52,17 @@ public final class BasicOperations {
     }
 
     public static double calculateAverage(Scanner scanner) {
-        System.out.println("Enter the first grade: ");
-        double grade01 = scanner.nextDouble();
-        System.out.println("Enter the second grade: ");
-        double grade02 = scanner.nextDouble();
-        System.out.println("Enter the third grade: ");
-        double grade03 = scanner.nextDouble();
-        System.out.println("Enter the fourth grade: ");
-        double grade04 = scanner.nextDouble();
-    
-        double averageGrade = (grade01 + grade02 + grade03 + grade04) / 4;
-    
-        System.out.println("The average grade is: " + averageGrade);
-        return averageGrade;
+        int[] grades = new int[4];
+        int sum = 0;
+
+        for (int gradeIndex = 0; gradeIndex < grades.length; gradeIndex++) {
+            System.out.println("Enter grade " + (gradeIndex + 1) + ": ");
+            sum += grades[gradeIndex];
+        }
+
+        int average = sum / grades.length;
+        System.out.println("The average of the grades is: " + average);
+        return average;
     }
     
     public static void convertMetersToCentimeters (Scanner scanner) {
