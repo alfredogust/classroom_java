@@ -72,4 +72,14 @@ public final class BasicOperations {
         double convertedMeters = metros * 100;
         System.out.println("Centimeters: " + convertedMeters);
     }
+
+    public static void displayCircleAreaAndPerimeter(Scanner scanner) {
+        System.out.print("Enter the circle radius: ");
+        double radius = scanner.nextDouble();
+    
+        double area = Math.PI * Math.pow(radius, 2);
+        double perimeter = 2 * Math.PI * radius;
+    
+        System.out.printf("Circle area: %.2f. Circle perimeter: %.2f%n", area, perimeter);
+    }
 }
