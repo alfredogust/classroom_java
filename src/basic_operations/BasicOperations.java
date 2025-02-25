@@ -50,4 +50,21 @@ public final class BasicOperations {
         System.out.println("O valor da soma é: " + sum);
         return sum;
     }
+
+    public static double calculateAverage(Scanner scanner) {
+        System.out.println("Enter the first grade: ");
+        double grade01 = scanner.nextDouble();
+        System.out.println("Enter the second grade: ");
+        double grade02 = scanner.nextDouble();
+        System.out.println("Enter the third grade: ");
+        double grade03 = scanner.nextDouble();
+        System.out.println("Enter the fourth grade: ");
+        double grade04 = scanner.nextDouble();
+    
+        double averageGrade = (grade01 + grade02 + grade03 + grade04) / 4;
+    
+        System.out.println("The average grade is: " + averageGrade);
+        return averageGrade;
+    }
+    
 }
