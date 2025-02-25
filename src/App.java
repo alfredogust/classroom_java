@@ -28,6 +28,7 @@ public class App {
                     case 3 -> BasicOperations.formatAndDisplayData();
                     case 4 -> BasicOperations.sumTwoNumbers(scanner);
                     case 5 -> BasicOperations.calculateAverage(scanner);
+                    case 6 -> BasicOperations.convertMetersToCentimeters(scanner);
                     case 0 -> System.out.println("Exiting...");
                     default -> System.out.println("Invalid option! Try again.");
                 }
