@@ -15,6 +15,7 @@ public class App {
                 System.out.println("5 - Calculate Average");
                 System.out.println("6 - Convert Meters to Centimeters");
                 System.out.println("7 - Display Circle and Area Perimeter");
+                System.out.println("8 - Calculate Square Area");
                 System.out.println("0 - Exit\n");
                 System.out.print("Choose an option: ");
                 
@@ -32,6 +33,7 @@ public class App {
                     case 5 -> BasicOperations.calculateAverage(scanner);
                     case 6 -> BasicOperations.convertMetersToCentimeters(scanner);
                     case 7 -> BasicOperations.displayCircleAreaAndPerimeter(scanner);
+                    case 8 -> BasicOperations.calculateSquareArea(scanner);
                     case 0 -> System.out.println("Exiting...");
                     default -> System.out.println("Invalid option! Try again.");
                 }
