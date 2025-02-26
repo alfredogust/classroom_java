@@ -8,3 +8,5 @@ src/*.md
 .vscode
 
 /bin
+
+/study-log
