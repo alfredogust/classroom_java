@@ -82,4 +82,15 @@ public final class BasicOperations {
     
         System.out.printf("Circle area: %.2f. Circle perimeter: %.2f%n", area, perimeter);
     }
+
+    public static void calculateSquareArea(Scanner scanner) {
+        System.out.println("Enter the side length of the square: ");
+        double sideLength = scanner.nextDouble();
+    
+        double area = sideLength * sideLength;
+        double doubledArea = area * 2;
+    
+        System.out.printf("The area of the square is: %.2f\n", area);
+        System.out.printf("The doubled area of the square is: %.2f\n", doubledArea);
+    }    
 }
