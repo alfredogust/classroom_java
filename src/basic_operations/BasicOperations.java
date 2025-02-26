@@ -93,4 +93,16 @@ public final class BasicOperations {
         System.out.printf("The area of the square is: %.2f\n", area);
         System.out.printf("The doubled area of the square is: %.2f\n", doubledArea);
     }    
+
+    public static void calculateSalary (Scanner scanner) {
+        System.out.println("Enter how much you earn per hour");
+        double earnsPerHour = scanner.nextDouble();
+
+        System.out.println("Enter the number of hours worked in the month");
+        double workedHours = scanner.nextDouble();
+
+        double totalSalary = earnsPerHour * workedHours;
+
+        System.out.printf("Total salary for that month: %.2f", totalSalary);
+    }
 }
