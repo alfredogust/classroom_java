@@ -105,4 +105,12 @@ public final class BasicOperations {
 
         System.out.printf("Total salary for that month: %.2f", totalSalary);
     }
+
+    public static void fahrenheitToCelsius (Scanner scanner) {
+        System.out.println("Enter the temperature in Fahrenheit: ");
+        double fahrenheit = scanner.nextDouble();
+    
+        double celsius = 5 * ((fahrenheit - 32) / 9);
+        System.out.printf("Temperature in Celsius: %.2f%n", celsius);
+    }
 }
