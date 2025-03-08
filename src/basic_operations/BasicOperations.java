@@ -120,5 +120,24 @@ public final class BasicOperations {
 
         double fahrenheit = (celsius * (9.0 / 5)) + 32;
         System.out.printf("Temperature in Fahrenheit: %.2f%n", fahrenheit);
-    }    
+    }
+
+    public static void calculateWithIntegersAndFloats (Scanner scanner) {
+        System.out.println("Enter the first integer number: ");
+        int firstNumber = scanner.nextInt();
+        System.out.println("Enter the second integer number: ");
+        int secondNumber = scanner.nextInt();
+
+        System.out.println("Enter a float number: ");
+        double thirdNumber = scanner.nextDouble();
+
+        double productOfDoubleAndHalf = 2.0 * firstNumber + secondNumber / 2.0;
+        double sumOfTripleFirstAndThird = 3.0 * firstNumber + thirdNumber;
+
+        double thirdCubed = thirdNumber * thirdNumber * thirdNumber;
+
+        System.out.printf("Product of double and half: %.2f%n", productOfDoubleAndHalf);
+        System.out.printf("Sum of triple first and third: %.2f%n", sumOfTripleFirstAndThird);
+        System.out.printf("Third cubed: %.2f%n", thirdCubed);
+    }
 }
