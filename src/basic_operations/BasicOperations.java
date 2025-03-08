@@ -113,4 +113,12 @@ public final class BasicOperations {
         double celsius = 5 * ((fahrenheit - 32) / 9);
         System.out.printf("Temperature in Celsius: %.2f%n", celsius);
     }
+
+    public static void celsiusToFahrenheit (Scanner scanner) {
+        System.out.println("Enter the temperature in Celsius: ");
+        double celsius = scanner.nextDouble();
+
+        double fahrenheit = (celsius * (9.0 / 5)) + 32;
+        System.out.printf("Temperature in Fahrenheit: %.2f%n", fahrenheit);
+    }    
 }
