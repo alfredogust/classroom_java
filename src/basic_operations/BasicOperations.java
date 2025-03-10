@@ -140,4 +140,12 @@ public final class BasicOperations {
         System.out.printf("Sum of triple first and third: %.2f%n", sumOfTripleFirstAndThird);
         System.out.printf("Third cubed: %.2f%n", thirdCubed);
     }
+
+    public static void calculateIdealWeight (Scanner scanner) {
+        System.out.println("Enter your height: ");
+        double height = scanner.nextDouble();
+
+        double idealWeight = (72.7 * height) - 58;
+        System.out.printf("Your ideal weight is %.2f", idealWeight);
+    }
 }
