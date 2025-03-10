@@ -1,4 +1,5 @@
-import basic_operations.BasicOperations;
+import edu.alfredogust.basic_operations.BasicOperations;
+
 import java.util.Scanner;
 
 public class App {

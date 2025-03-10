@@ -1,4 +1,4 @@
-package basic_operations;
+package edu.alfredogust.basic_operations;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -148,4 +148,6 @@ public final class BasicOperations {
         double idealWeight = (72.7 * height) - 58;
         System.out.printf("Your ideal weight is %.2f", idealWeight);
     }
+
+    
 }
