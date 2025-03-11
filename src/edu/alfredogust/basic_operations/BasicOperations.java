@@ -151,4 +151,24 @@ public final class BasicOperations {
         System.out.printf("Ideal weight for mens: %.2f kg", menIdealWeight);
         System.out.printf("Ideal weight for womans: %.2f kg", womanIdealWeight);
     }
+
+    public static void calculateFishOverweightPenalty (Scanner scanner) {
+        System.out.println("Enter the weight of the fish: ");
+        double fishWeight =  scanner.nextDouble();
+
+        double fineForExcess = 4.0;
+        double weightLimit =  50.0;
+        double excess = 0;
+        double valueOfTheFine = 0;
+
+        if (fishWeight > weightLimit) {
+            excess = fishWeight - weightLimit;
+            valueOfTheFine = excess * fineForExcess;
+
+            System.out.printf("Excess: %.2f%n", excess);
+            System.out.printf("Fine: %.2f%n", valueOfTheFine);
+        } else {
+            System.out.printf("There is no excess weight.");
+        }
+    }
 }
