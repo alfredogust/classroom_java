@@ -1,5 +1,4 @@
 import edu.alfredogust.basic_operations.BasicOperations;
-
 import java.util.Scanner;
 
 public class App {
@@ -22,6 +21,7 @@ public class App {
                 System.out.println("11 - Celsius to Fahrenheit");
                 System.out.println("12 - Calculate Integer and Floats");
                 System.out.println("13 - Calculate Ideal Weight");
+                System.out.println("14 - Calculate Fish Over Weight Penalty");
                 System.out.println("0 - Exit\n");
                 System.out.print("Choose an option: ");
                 
@@ -44,7 +44,8 @@ public class App {
                     case 10 -> BasicOperations.fahrenheitToCelsius(scanner);
                     case 11 -> BasicOperations.celsiusToFahrenheit(scanner);
                     case 12 -> BasicOperations.calculateWithIntegersAndFloats(scanner);
-                    case 13-> BasicOperations.calculateIdealWeight(scanner);
+                    case 13 -> BasicOperations.calculateIdealWeight(scanner);
+                    case 14 -> BasicOperations.calculateFishOverweightPenalty(scanner);
                     case 0 -> System.out.println("Exiting...");
                     default -> System.out.println("Invalid option! Try again.");
                 }
