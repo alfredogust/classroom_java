@@ -158,12 +158,10 @@ public final class BasicOperations {
 
         double fineForExcess = 4.0;
         double weightLimit =  50.0;
-        double excess = 0;
-        double valueOfTheFine = 0;
 
         if (fishWeight > weightLimit) {
-            excess = fishWeight - weightLimit;
-            valueOfTheFine = excess * fineForExcess;
+            double excess = fishWeight - weightLimit;
+            double valueOfTheFine = excess * fineForExcess;
 
             System.out.printf("Excess: %.2f%n", excess);
             System.out.printf("Fine: %.2f%n", valueOfTheFine);
