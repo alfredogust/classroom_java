@@ -145,9 +145,10 @@ public final class BasicOperations {
         System.out.println("Enter your height: ");
         double height = scanner.nextDouble();
 
-        double idealWeight = (72.7 * height) - 58;
-        System.out.printf("Your ideal weight is %.2f", idealWeight);
-    }
+        double menIdealWeight = (72.7 * height) - 58;
+        double womanIdealWeight = (62.1 * height) - 44.7;
 
-    
+        System.out.printf("Ideal weight for mens: %.2f kg", menIdealWeight);
+        System.out.printf("Ideal weight for womans: %.2f kg", womanIdealWeight);
+    }
 }
